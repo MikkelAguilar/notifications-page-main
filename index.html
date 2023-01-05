@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Notifications page</title>
+</head>
+<body>
+  <div class="main">
+    <div class="main__notificationBar">
+      <div class="notificationBar__start">
+        <h2>Notifications</h2>
+        <p id="numberOfNotifications">3</p>
+      </div>
+      <div class="notificationBar__end">
+        <button type="button" onclick="markRead()">Mark all as read</button>
+      </div>
+    </div>
+    <div class="main__notificationContainer">
+      <div class="notificationContainer__notification unread">
+        <div class="notification__imageContainer">
+          <img src="assets/images/avatar-mark-webber.webp" alt="icon"/>
+        </div>
+        <div class="notification__textContainer">
+          <p><span class="textContainer__name">Mark Webber</span> reacted to your recent post My first tournament today!<span class="textContainer__indicator"></span></p>
+          <p>1m ago</p>
+        </div>
+      </div>
+      <div class="notificationContainer__notification unread">
+        <div class="notification__imageContainer">
+          <img src="assets/images/avatar-angela-gray.webp" alt="icon"/>
+        </div>
+        <div class="notification__textContainer">
+          <p><span class="textContainer__name">Angela Gray</span> followed you<span class="textContainer__indicator"></span></p>
+          <p>5m ago</p>
+        </div>
+      </div>
+      <div class="notificationContainer__notification unread">
+        <div class="notification__imageContainer">
+          <img src="assets/images/avatar-jacob-thompson.webp" alt="icon"/>
+        </div>
+        <div class="notification__textContainer">
+          <p><span class="textContainer__name">Jacob Thompson</span> has joined your group Chess Club<span class="textContainer__indicator"></span></p>
+          <p>1 day ago</p>
+        </div>
+      </div>
+      <div class="notificationContainer__notification">
+        <div class="notification__imageContainer">
+          <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="icon"/>
+        </div>
+        <div class="notification__textContainer">
+          <p><span class="textContainer__name">Rizky Hasanuddin</span> sent you a private message<span class="textContainer__indicator"></span></p>
+          <p>5 days ago</p>
+          <p class="textContainer__message">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
+        </div>
+      </div>
+      <div class="notificationContainer__notification">
+        <div class="notification__imageContainer">
+          <img src="assets/images/avatar-kimberly-smith.webp" alt="icon"/>
+        </div>
+        <div class="notification__textContainer">
+          <p><span class="textContainer__name">Kimberly Smith</span> commented on your picture<span class="textContainer__indicator"></span></p>
+          <p>1 week ago</p>
+        </div>
+      </div>
+      <div class="notificationContainer__notification">
+        <div class="notification__imageContainer">
+          <img src="assets/images/avatar-nathan-peterson.webp" alt="icon"/>
+        </div>
+        <div class="notification__textContainer">
+          <p><span class="textContainer__name">Nathan Peterson</span> reacted to your recent post 5 end-game strategies to increase your win rate<span class="textContainer__indicator"></span></p>
+          <p>2 weeks ago</p>
+        </div>
+      </div>
+      <div class="notificationContainer__notification">
+        <div class="notification__imageContainer">
+          <img src="assets/images/avatar-anna-kim.webp" alt="icon"/>
+        </div>
+        <div class="notification__textContainer">
+          <p><span class="textContainer__name">Anna Kim</span> left the group Chess Club<span class="textContainer__indicator"></span></p>
+          <p>2 weeks ago</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
